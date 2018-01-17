@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Yanone Kaffeesatz', Sans-serif;
+	letter-spacing: 1.5px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*-------- Estilos del Formulario de Ingreso ---------*/
+
+.container {
+	max-width: 450px;
+	height: 460px;
+	text-align: center;
+	background-color: #ffdac6;
+	border-radius: 8px;
+	margin: 5% auto;
+	margin-top: 80px;
+}
+
+
+
+img{
+	display: block;
+	margin: auto;
+	width: 120px;
+	height: 120px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 28px;
+	color: #c1243f;
+}
+
+input {
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+input[type ="submit"]{
+	padding: 15px 30px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background: #7e0031;
+	cursor: pointer;
+	opacity: 1;
+}
+
+input[type="submit"]:hover,#crear-cuenta:hover{
+	opacity: 0.8;
+}
+
+#crear-cuenta {
+	color: #57002d;
+	text-decoration: none;
+	opacity: 1;
+}
+
+
+/*----------- Responsive-----------*/
+
+@media (min-width:1024px) {
+	.contenedor{
+	width: 1000px;
+	}
+
+	.nav{
+	position: static;
+	width: auto;	
+	}
+
+	.menu{
+		display: flex;
+	}
+
+	.icon-menu{
+		display: none;
+	}
+
+	.menu-link{
+		background: none;
+		font-size: 20px;
+	}
+
+}

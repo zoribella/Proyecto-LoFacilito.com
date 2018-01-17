@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	box-sizing: border-box;	
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Yanone Kaffeesatz', Sans-serif;
+	letter-spacing: 1.5px;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.titulo-seccion{
+	text-align: center;
+	font-size: 40px;
+	color: #581845;
+	padding: 10px;
+}
+
+.contenedor{
+	margin: auto;
+	width: 99%;
+}
+
+/* -----------ESTILOS DEL HEADER------------*/
+
+header{
+	height: 60px;
+}
+
+header .contenedor{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	background: rgba(88, 24, 69, 0.5);
+}
+
+.icon-logo{
+	color: #fff;
+}
+
+.icon-logo, .icon-menu{
+	margin: 8px;
+}
+
+.icon-menu{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background:#581845;
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+/*---------ESTILOS DEL MENU-----------*/
+
+.nav{
+	position: absolute;
+	top:60px;
+	left: 0;
+	width: 100%;
+	left:-100%;
+	transition:all 0.4s;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-link{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	background:#581845;
+	color: #fff;
+}
+
+.menu-link:hover{
+	background: white;
+	color: #581845;
+}
+
+.mostrar{
+	left: 0;
+}
+
+.select{
+	background: white;
+	color: #581845;
+}
+
+/*----------ESTILOS BANNER-----------*/
+
+.banner{
+	margin-top: -60px;
+	position: relative;
+	z-index: -1000;
+}
+
+.img-banner{
+	height: 20%;
+}
+
+.banner .contenedor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 70%;
+	color:#c70039;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+#text-banner{
+	display: none;
+	text-align: center;
+}
+
+/*------------- ESTILO DE LISTA DE CATEGORIAS---------*/
+.categorias{
+	text-align: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.categorias .lista-categorias{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.lista{
+	margin: 20px;
+}
+
+.lista img{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 7px solid #581845;
+}
+
+.lista a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #c70039;
+	
+}
+/*----------ESTILOS DE SECCION ANUNCIO-----*/
+
+.info-anuncio{
+	background:#c70039;
+	color: #fff;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+.imag-anuncio{
+	display: block;
+	width: 100%;
+}
+
+.titulo-anuncio{
+	text-align: center;
+}
+
+.descripcion-anuncio{
+	text-align: center;
+}
+
+.ver-anuncio{
+	float: right;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	background: #581845;
+	color: #fff;
+	margin: -10px 0;
+}
+
+#lista-anuncios{
+	float: right;
+	color: #581845;
+	font-size: 20px;
+}
+
+/*---------- ESTILOS SECCION QUIENES SOMOS--------*/
+
+.about{
+	padding: 15px;
+	margin-top: 8px;
+	margin-bottom: 20px;
+}
+
+#texto-about{
+	text-align: center;
+	color: #c70039;
+	font-size: 18px;
+}
+
+
+/*-------------ESTILOS DEL FOOTER---------*/
+
+footer{
+	background:#581845;
+	color: #fff;
+	padding: 10px;
+	text-align: right;
+}
+
+footer .social [class^="icon-"]{
+	display: inline-block;
+	color: #581845;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+}
+
+/*--------------- Responsive----------*/
+
+@media(min-width: 480px){
+	.icon-logo{
+		font-size: 40px;
+	}
+
+	#titulo-banner{
+		font-size: 30px;
+		margin: 5px;
+	}
+
+	#text-banner{
+		display: block;
+		color: #fff;
+		font-size: 18px;
+		margin: 5px 0;
+	}
+
+	.anuncio-categoria{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.info-anuncio{
+		width: 32%;
+	}
+
+	.descripcion-anuncio{
+		font-size: 17px;
+	}
+
+	.titulo-anuncio{
+		font-size: 30px;
+		margin: 5px 0;
+	}
+
+	#texto-about{
+		font-size: 20px;
+	}
+	
+	footer{
+		text-align: center;
+	}
+
+	footer .social [class^="icon-"]{
+		margin: 0 10px;
+	}	
+}
+
+@media (min-width:768px) {
+	#titulo-banner{
+		font-size: 50px;
+	}
+
+	#text-banner{
+		font-size: 30px;
+	}
+
+	.descripcion-anuncio{
+		font-size: 20px;
+	}
+
+	.titulo-anuncio{
+		font-size: 35px;
+	}
+
+	#texto-about{
+		font-size: 20px;
+	}
+
+	.titulo-seccion{
+		font-size: 40px;
+	}
+}
+
+@media (min-width:1024px) {
+	.contenedor{
+	width: 1000px;
+	}
+
+	.nav{
+	position: static;
+	width: auto;	
+	}
+
+	.menu{
+		display: flex;
+	}
+
+	.icon-menu{
+		display: none;
+	}
+
+	.menu-link{
+		background: none;
+		font-size: 20px;
+	}
+
+	.select{
+		background: rgba(255, 255, 255, 0.5);
+		color: #581845;
+	}
+
+	#titulo-banner{
+		font-size: 50px;
+	}
+
+	#text-banner{
+		font-size: 40px;
+	}
+
+	.lista img{
+		width: 180px;
+		height: 180px;
+	}
+
+	.lista a{
+		font-size: 30px;
+	}
+
+	.titulo-anuncio{
+		font-size: 45px;
+	}
+
+	#texto-about{
+		font-size: 25px;
+	}
+
+	.titulo-seccion{
+		font-size: 50px;
+	}
+}
+
+@media (min-width:1280px) {
+	.contenedor{
+		width: 1200px;
+	}
+}
