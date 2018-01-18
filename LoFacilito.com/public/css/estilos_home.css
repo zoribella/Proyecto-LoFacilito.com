@@ -103,7 +103,7 @@ header .contenedor{
 	left: 0;
 }
 
-.select{
+.selected{
 	background: white;
 	color: #581845;
 }
