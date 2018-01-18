@@ -1,12 +1,18 @@
-<div class="container">
-    <img src="../imagenes/hombre.png">
-    <form action="/login" method="post">
-        <div class="form-input">
-            <h2>¡Hola! Ingresa a Lo Facilito.</h2>
-            <input type="text" name="usuario" placeholder="E-mail o usuario">
-            <input type="password" name="contraseña" placeholder="Clave">
-            <input type="submit" value="Ingresar">
-        </div>
-        <a id="crear-cuenta" href="/registro">Crear cuenta</a>
-    </form>
-</div>
+{{>estilo-login}} 
+{{>header}}
+<main>
+    <div class="contenedor-form">
+        <h2>¡Hola! Ingresa a Lo Facilito.</h2>
+        <form class="form" action="/login">
+            <div class="contenedor-inputs">
+                <img src="../imagenes/hombre.png">
+                <input class="input" type="text" name="nombre" placeholder="E-mail o usuario" required>
+                <input class="input" type="password" name="clave" placeholder="Clave" required>
+                <input class="input-btn" type="submit" value="Ingresar">
+                <p id="link-ingresar">¿Necesitas una cuenta?
+                <a id="ingresar" href="/registro">Crea una aquí</a></p>
+                <p id="link-ingresar"> ó regresa al<a id="ingresar" href="/">Inicio</a></p>
+            </div>
+        </form>
+    </div>
+</main>

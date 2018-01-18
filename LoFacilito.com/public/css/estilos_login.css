@@ -15,72 +15,81 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+/*----------- Estilos del formulario de registro--------*/
 
-
-/*-------- Estilos del Formulario de Ingreso ---------*/
-
-.container {
+.contenedor-form{
 	max-width: 450px;
-	height: 460px;
-	text-align: center;
-	background-color: #ffdac6;
-	border-radius: 8px;
+	height: auto;
+	margin-top: 60px;
 	margin: 5% auto;
-	margin-top: 80px;
+	
 }
 
+h2{
+	text-align: center;
+	margin-bottom: 15px;
+	color: #c1243f;	
+}
 
+.contenedor-inputs{
+	background-color: #ffdac6;
+	border-radius: 8px;
+	padding:  32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
-img{
+.contenedor-inputs img{
 	display: block;
 	margin: auto;
 	width: 120px;
 	height: 120px;
-	margin-bottom: 30px;
-	text-align: center;
 }
 
-h2 {
-	text-align: center;
-	margin-bottom: 28px;
-	color: #c1243f;
+.input, .input-btn{
+	background: #fff;
+	padding: 8px;
+	margin: 8px 0;
+	border: none;
+	border-bottom: solid #ffdac6 3.2px;
+	transition:all 8px;
 }
 
-input {
-	height: 45px;
-	width: 300px;
-	font-size: 18px;
-	margin-bottom: 20px;
-	padding-left: 20px;
+.input:focus{
+	border-bottom: solid #c1243f 4px;
 }
 
-input[type ="submit"]{
+.input-btn{
 	padding: 15px 30px;
 	color: #fff;
+	font-size: 18px;
 	border: none;
 	border-radius: 5px;
 	background: #7e0031;
 	cursor: pointer;
 	opacity: 1;
 }
-
-input[type="submit"]:hover,#crear-cuenta:hover{
+.input-btn:hover, #ingresar{
 	opacity: 0.8;
 }
 
-#crear-cuenta {
+#link-ingresar{
+	width: 100%;
+	margin: 7px;;
+	font-size: 14px;
+	text-align: center;
+}
+
+#ingresar{
 	color: #57002d;
 	text-decoration: none;
 	opacity: 1;
 }
 
-
 /*----------- Responsive-----------*/
 
 @media (min-width:1024px) {
-	.contenedor{
-	width: 1000px;
-	}
 
 	.nav{
 	position: static;
