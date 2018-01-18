@@ -18,7 +18,7 @@ mongoose.connect(url, {
     useMongoClient:true
 });
 
-//require('./config/passport')(passport);
+require('./config/passport')(passport);
 
  // Settingh
 app.set('views', path.join(__dirname, 'views'));

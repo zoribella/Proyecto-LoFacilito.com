@@ -10,7 +10,7 @@ module.exports = (app, passport)=>{
         });
     });
 
-    //app.post('/login', (req, res) => ());
+    //app.post('/login', passport.authenticate(''));
 
     app.get('/registro', (req, res)=>{
         res.render('registro', { selected: {registro: true} }, {
@@ -18,7 +18,17 @@ module.exports = (app, passport)=>{
         });
     });
 
-    //app.post('/registro', (req, res) => ());
+    app.post('/registro', passport.authenticate('local-registro', {
+        successRedirect: '/perfil',
+        failureRedirect: '/registro',
+        failureFlash: true
+    }));
+
+    app.get('/perfil', (req, res)=>{
+        res.render('perfil', {
+            user: req.user
+        });
+    });
     
     app.get('/detalle', (req, res)=>{
         res.render('detalle')
